@@ -18,7 +18,7 @@
 .allContent {
   width: 50%;
 
-  height: 60vh;
+  height: 70vh;
   display: flex;
   flex-direction: row;
   background-color: white;
@@ -62,6 +62,7 @@ p {
   );
 
   width: 15rem;
+  box-shadow: 0px 0px 10px 1px rgba(76, 24, 196, 0.306);
   height: 15rem;
   border-radius: 50%;
   padding: 10px;

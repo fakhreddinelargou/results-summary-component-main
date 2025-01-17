@@ -1,11 +1,4 @@
-/* 
-# FONT-FAMILY
-# FONT-1
-  font-family: "Hanken Grotesk", serif;
-  font-optical-sizing: auto;
-  font-weight: ;
-  font-style: normal;
-*/
+
 @import url(./style.css);
 * {
   padding: 0;
@@ -42,4 +35,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.8rem;
+  background-color: var(--nuetral-white);
+}
+
+@media screen and (max-width:45rem) {
+  body{
+    height: auto;
+  }
 }

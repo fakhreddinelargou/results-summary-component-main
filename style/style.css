@@ -1,27 +1,5 @@
-.cards {
 
-  display: flex;
-  flex-direction: row;
-  background-color: var(  --nuetral-white);
-}
-.box-cards {
- 
-  padding: 2.5rem;
-  
-}
-.title {
-  font-size: 2.2rem;
-  font-weight: 700;
-padding-bottom: 2rem;
-}
-
-/* article 1 */
 .primary-card {
-  border-radius: 3rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background: linear-gradient(
     to bottom,
     var(--gradients-light-slate-blue),
@@ -29,85 +7,20 @@ padding-bottom: 2rem;
   );
 }
 .primary-card .score {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background: linear-gradient(
     to bottom,
     var(--gradients-light-violet-blue),
     var(--gradients-light-presian-blue)
   );
-  width: 15rem;
-  box-shadow: 0px 0px 10px 1px rgba(76, 24, 196, 0.306);
-  height: 15rem;
-  border-radius: 50%;
-  padding: 10px;
 }
-.primary-card .score span {
-  font-size: 6rem;
-  font-weight: 800;
-}
-.result {
-  font-size: 2.5rem;
-  font-weight: 800;
-  padding: 2rem 0rem 0rem 0rem;
-}
-.paragraph {
-  font-size: 1.8rem;
-max-width: 25rem;
-  padding: 1rem 0rem 2rem 0rem;
-}
-.result,
-.score span {
-  color: var(--nuetral-white);
-}
-.primary-title {
-  color: var(--nuetral-light-lavender);
-}
-.score,
-.paragraph {
-  color: var(--nuetral-light-lavender);
-}
-/* ARTICLE 2 */
-.secondary-card {
-  border-radius: 0rem 3rem 3rem 0rem;
-  box-shadow: 10px 0px 10px 2px rgba(202, 202, 202, 0.151);
-}
-.infos {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding-top: 3rem;
-padding-bottom: 3rem;
 
-}
-.secondary-card .infos div {
-
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-
-  width: 25rem;
-}
-.icon-design {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
 .secondary-card button {
-  padding: 1.5rem;
-  width: 25rem;
-  border-radius: 25rem;
-  border: none;
   background: linear-gradient(
     to bottom,
     var(--nuetral-dark-gray-blue),
     var(--nuetral-dark-gray-blue)
   );
-  color: var(--nuetral-white);
-  transition: 0.4s all;
-  cursor: pointer;
+
 }
 .secondary-card button:hover {
   background: linear-gradient(
@@ -115,51 +28,4 @@ padding-bottom: 3rem;
     var(--gradients-light-slate-blue),
     var(--gradients-light-royal-blue)
   );
-}
-.accent {
-  color: var(--nuetral-light-lavender);
-}
-.muted-red,
-.muted-yellow,
-.muted-green,
-.muted-blue {
-  border-radius: 5px;
-}
-.muted-red {
-  color: var(--primary-light-red);
-  background-color: hsla(0, 100%, 67%, 0.1);
-}
-.muted-yellow {
-  color: var(--primary-orangey-yellow);
-  background-color: hsl(39, 100%, 56%, 0.1);
-}
-.muted-green {
-  color: var(--primary-green-teal);
-  background-color: hsl(166, 100%, 37%, 0.1);
-}
-.muted-blue {
-  color: var(--primary-cobalt-blue);
-  background-color: hsl(234, 85%, 45%, 0.1);
-}
-@media screen and (max-width:45rem) {
-  .cards{
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .secondary-card .infos div{
-    width: 100%;
-    padding: 2rem;
-  }
-  .secondary-card button{
-    width: 100%;
-    padding: 2rem;
-  }
-  .primary-card{
-    border-radius: 0 0 3rem 3rem ;
-  }
-  .secondary-card{
-    border-radius: none;
-    box-shadow: none;
-  }
 }

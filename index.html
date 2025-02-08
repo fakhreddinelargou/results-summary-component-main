@@ -9,27 +9,53 @@
       rel="stylesheet"
     />
     <!-- /\ -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/style/main.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/assets/images/icon.ico" />
     <title>Frontend Mentor | Results summary component</title>
   </head>
-  <body>
-    <section class="cards">
-      <div class="primary-card box-cards">
-        <span class="title primary-title">Your Result</span>
-        <div class="score"><span>76</span>of 100</div>
-        <div class="result">Great</div>
-        <p class="paragraph">
+  <body
+    class="w-full h-screen flex justify-center items-center text-[1.8rem] bg-[var(--nuetral-white)] max-sm:h-auto"
+  >
+    <section class="cards flex bg-[var(--nuetral-white)] max-md:flex-col max-sm:w-[100%] ">
+      <div
+        class="primary-card  box-cards p-[2.5rem] rounded-[3rem] text-center flex flex-col items-center max-sm:rounded-[0_0_3rem_3rem] "
+      >
+        <span
+          class="title primary-title text-[2.2rem] text-bold pb-[2rem] text-[var(--nuetral-light-lavender)]"
+          >Your Result</span
+        >
+        <div
+          class="score shadow-[0px_0px_10px_1px_rgba(76,24,196,0.306)] bg-[var(--gradients-light-violet-blue)] flex flex-col text-center justify-center w-[15rem] h-[15rem] rounded-[50%] p-[1rem] text-[var(--nuetral-light-lavender)]"
+        >
+          <span class="text-[6rem] text-extrabold  text-[var(--nuetral-white)]"
+            >76</span
+          >of 100
+        </div>
+        <div
+          class="result text-[2.5rem] text-bold pt-[2rem] text-[var(--nuetral-white)]"
+        >
+          Great
+        </div>
+        <p
+          class="paragraph text-[1.8rem] max-w-[25rem] pt-[1rem] pb-[2rem] text-[var(--nuetral-light-lavender)]"
+        >
           You scored higher than 65% of the people who have taken these tests.
         </p>
       </div>
-      <div class="secondary-card box-cards">
-        <span class="title secondary-title">Summary</span>
-        <div class="infos">
-          <div class="muted-red">
-            <span class="icon-design ">
+      <div
+        class="secondary-card box-cards p-[2.5rem] rounded-[0rem_3rem_3rem_0rem] shadow-[10px_0px_10px_2px_rgba(202,202,202,0.151)]   max-sm:rounded-none  max-sm:shadow-none"
+      >
+        <span class="title secondary-title text-[2.2rem] text-bold pb-[2rem]"
+          >Summary</span
+        >
+        <div class="infos flex flex-col gap-[1.5rem] py-[3rem]">
+          <div
+            class="muted-red flex justify-between p-[1rem] w-[25rem] rounded-[.5rem] bg-[hsl(0,100%,67%)] bg-opacity-10 text-[var(--primary-light-red)] max-sm:w-full p-[2rem]"
+          >
+            <span class="icon-design flex items-center gap-[1rem]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -48,10 +74,17 @@
 
               Reaction
             </span>
-            <span>80 <span class="accent">/ 100</span></span>
+            <span
+              >80
+              <span class="accent text-[var(--nuetral-light-lavender)]"
+                >/ 100</span
+              ></span
+            >
           </div>
-          <div class="muted-yellow">
-            <span class="icon-design ">
+          <div
+            class="muted-yellow flex justify-between p-[1rem] w-[25rem] rounded-[.5rem] bg-[hsl(39,100%,56%)] bg-opacity-10 text-[var(--primary-orangey-yellow)]  max-sm:w-full p-[2rem]"
+          >
+            <span class="icon-design flex items-center gap-[1rem]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -83,10 +116,17 @@
               </svg>
               Memory
             </span>
-            <span>92 <span class="accent">/ 100</span></span>
+            <span
+              >92
+              <span class="accent text-[var(--nuetral-light-lavender)]"
+                >/ 100</span
+              ></span
+            >
           </div>
-          <div class="muted-green">
-            <span class="icon-design ">
+          <div
+            class="muted-green flex justify-between p-[1rem] w-[25rem] rounded-[.5rem] bg-[hsl(166,100%,37%)] bg-opacity-10 text-[var(--primary-green-teal)]  max-sm:w-full p-[2rem]"
+          >
+            <span class="icon-design flex items-center gap-[1rem]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -104,10 +144,17 @@
               </svg>
               Verbal
             </span>
-            <span>61 <span class="accent">/ 100</span></span>
+            <span
+              >61
+              <span class="accent text-[var(--nuetral-light-lavender)]"
+                >/ 100</span
+              ></span
+            >
           </div>
-          <div class="muted-blue">
-            <span  class="icon-design">
+          <div
+            class="muted-blue flex justify-between p-[1rem] w-[25rem] rounded-[.5rem] bg-[hsl(234,85%,45%)] bg-opacity-10 text-[var(--primary-cobalt-blue)]  max-sm:w-full p-[2rem]"
+          >
+            <span class="icon-design flex items-center gap-[1rem]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -133,10 +180,19 @@
 
               Visual
             </span>
-            <span>72 <span class="accent">/ 100</span></span>
+            <span
+              >72
+              <span class="accent text-[var(--nuetral-light-lavender)]"
+                >/ 100</span
+              ></span
+            >
           </div>
         </div>
-        <button>Continue</button>
+        <button
+          class="p-[1.5rem] w-[25rem] rounded-[25rem] border-none text-[var(--nuetral-white)] cursor-pointer transition-[200]  max-sm:w-full p-[2rem]"
+        >
+          Continue
+        </button>
       </div>
     </section>
   </body>
